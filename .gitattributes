@@ -5,3 +5,4 @@
 # not grow by the full compressed archive on every release.
 *.tar.gz filter=lfs diff=lfs merge=lfs -text
 *.sha256 text eol=lf
+*.sig binary
