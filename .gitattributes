@@ -1,2 +1,7 @@
-# Auto detect text files and perform LF normalization
+# Auto detect text files and perform LF normalization.
 * text=auto
+
+# Release archives are binary and live in Git LFS so repository history does
+# not grow by the full compressed archive on every release.
+*.tar.gz filter=lfs diff=lfs merge=lfs -text
+*.sha256 text eol=lf
